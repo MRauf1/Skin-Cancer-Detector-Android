@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.m_rau.skincancerdetector.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:contentDescription="Image"/>
+
+    <Button
+        android:id="@+id/buttonPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:onClick="checkPermissions"
+        android:text="Take Photo"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/loadimage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Image"
+        />
+
+    <TextView
+        android:id="@+id/prediction"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageViewPhoto"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="" />
+
+</RelativeLayout>
